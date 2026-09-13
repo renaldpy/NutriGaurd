@@ -1,0 +1,32 @@
+{
+  "name": "family-cart-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Member 3 module: OpenAI + OpenRouter + Exa pipeline for the family dietary checkout agent",
+  "main": "dist/analyzeCart.js",
+  "types": "dist/analyzeCart.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit -p tsconfig.typecheck.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "smoke": "node --import tsx src/smoke.ts",
+    "server": "node --import tsx src/startServer.ts"
+  },
+  "dependencies": {
+    "@copilotkit/runtime": "^1.71.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exa-js": "^1.4.10",
+    "express": "^4.21.0",
+    "openai": "^4.68.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "NutriGuard Family Overlay",
+  "version": "1.0",
+  "description": "Scans your grocery cart for allergens and dietary gaps.",
+  "permissions": ["storage"],
+  "host_permissions": ["http://localhost:4000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js", "content-scanner.js"]
+    }
+  ]
+}
