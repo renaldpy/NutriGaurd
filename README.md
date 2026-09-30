@@ -3,10 +3,14 @@
 Member 3 module for the family dietary/allergy checkout agent — OpenAI, OpenRouter, and Exa.
 
 Built By:
-renaldpy: Github
-saadsgit : Github
-imranux-ui : Github
-XStoryShiftX : Github
+
+Github: renaldpy.
+
+Github: saadsgit.
+
+Github: imranux-ui.
+
+Github: XStoryShiftX.
 
 ## Setup
 
